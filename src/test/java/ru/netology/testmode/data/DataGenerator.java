@@ -24,8 +24,7 @@ public class DataGenerator {
     private DataGenerator() {
     }
     private static final Faker faker = new Faker(new Locale("en"));
-    private static void sendRequest(RegistrationDto user) { // объекты ДТО служат для передачи данных (полей), а методов не имеют
-        // сам запрос
+    private static void sendRequest(RegistrationDto user) {
         given()
                 .spec(requestSpec)
                 .body(user)
